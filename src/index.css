@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+*{
+    font-family: "New Amsterdam", sans-serif; 
+    overflow: hidden;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all  0.3s ease-out  ;
+    /* mix-blend-mode: soft-light; */
+    z-index: 1;
+}
+
+
+.op{
+    text-align: center;
+    font-size: 6xl; /* Adjusted for large screens */
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: bolder;
+}
+
+.op1{
+    font-size: 2xl; /* Adjusted for large screens */
+}  
+.opl{
+    filter: drop-shadow(2px 4px 6px black);
+
+    object-fit: cover;
+}
+
+
+.b{
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+.c{
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.489));
+}
+.m{
+    scale: 1.1;
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.489));
+    transition: all 1.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.m:hover{
+    scale: 1.3;
+    filter: saturate(1.2);
+}
+
+
+
+
+
+
+@media screen and (max-width:730px) {
+    .fil{
+        background: #ffffff2e;
+    backdrop-filter: blur(2px);
+    height: fit-content;
+    margin-top: 26px;
+    border-radius: 25px;
+    padding: 30px;
+    }
+    
+}
+
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.sl{
+    background-color:  rgba(255, 255, 255, 0.233) ;
+    backdrop-filter: blur(3px);
+    font-size: 30px;
+    font-weight: bolder;
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.489));
+    transition: all 1s ease-out;
+}
+
+
+.la:hover{
+    scale: 2;
+    z-index: -1;
+    transition: all 1s ease-out;
+}
+
+.d{
+    transition:  all 2s ease-out;
+}
+
+  /* emailjs.send('service_8ntqheo', 'template_ysnzad3', formData, 'a_l6VVvshh9vBVJkM') */
+
+
+  .glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #0ff;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-color {
+    0% {
+       transform: translate(0);
+    }
+ 
+    20% {
+       transform: translate(-3px, 3px);
+    }
+ 
+    40% {
+       transform: translate(-3px, -3px);
+    }
+ 
+    60% {
+       transform: translate(3px, 3px);
+    }
+ 
+    80% {
+       transform: translate(3px, -3px);
+    }
+ 
+    to {
+       transform: translate(0);
+    }
+ }
+
+ .iu{
+    height: -webkit-fill-available;
+    transition: all 1.2s ease-out;
+ }
+
+ .yu{
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.489));
+ }
+ .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .ij {
+    /* -webkit-mask-image: url('https://www.kindpng.com/imgv/hRmhJRT_splatter-layer-mask-mask-for-photoshop-png-transparent'); */
+    /* mask-image: url('https://www.pngwing.com/en/free-png-mfxby'); */
+    mask-size: cover; /* Adjust as needed */
+    mask-repeat: no-repeat; /* Prevent repeating the mask image */
+    border-bottom-right-radius: 100px;
+  }
+  
+  /* .kl{
+    transform: scaleX(-1);
+    border-bottom-right-radius: 100px;
+  } */

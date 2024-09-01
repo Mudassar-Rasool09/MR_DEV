@@ -47,8 +47,8 @@ function App() {
         >
           <Suspense fallback={<div className=' w-full  h-full flex justify-center  items-center '> <span>Loading...</span> </div>}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
+              {/* <Route exact  path="MR_DEVELOPER/home" element={<Home />} /> */}
+              <Route exact path="/home" element={<Home />} />
               <Route path="/aboutus" element={<About />} />
               <Route path="/projects" element={<Project />} />
               <Route path="/contactus" element={<Contact />} />

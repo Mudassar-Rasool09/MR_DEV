@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { Suspense, lazy, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
@@ -44,7 +45,7 @@ function App() {
             darkMode ? 'bg-black' : 'bg-white border-2 shadow-xl'
           } relative`}
         >
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className=' w-full  h-full flex justify-center  items-center '> <span>Loading...</span> </div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
